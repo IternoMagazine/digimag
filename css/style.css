@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-image: url("./background.png");
+  background-image: url("../background.png");
   padding: 0 50px;
 }
 

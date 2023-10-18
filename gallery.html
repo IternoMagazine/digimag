@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigMag</title>
+    <link href="./css/gallery.css" rel="stylesheet" />
+    <link href="./css/extra.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./logo.svg" />
+          <img class="ham" src="./ham.svg" alt="" />
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>Articles</li>
+          <li>Poems</li>
+          <li>Photos</li>
+          <li>Gallery</li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="buttons flex items-center justify-center py-4 md:py-4 flex-wrap"
+    >
+      <button id="all" class="bg-gray-200 px-3 py-2 mr-5 rounded-md">
+        All
+      </button>
+      <button class="bg-gray-200 px-3 py-2 mr-5 rounded-md" id="2021">
+        2021
+      </button>
+      <button class="bg-gray-200 px-3 py-2 mr-5 rounded-md" id="2022">
+        2022
+      </button>
+    </div>
+
+    <div class="p-10 flex flex-col items-center content-center">
+      <div class="block md:grid grid-cols-3 gap-10 w-full h-full">
+        <img
+          data-year="2022"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image1.jpg"
+          alt="Image"
+        />
+        <img
+          data-year="2022"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image2.jpg"
+          alt="Image"
+        />
+        <img
+          data-year="2022"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image3.jpg"
+          alt="Image"
+        />
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-screen-sm mt-10 text-center lg:mb-16 mb-8">
+      <h2
+        class="faculty-intro mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white-900 lg:text-white"
+      >
+        Faculty
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-5 gap-1 mb-10">
+      <div>
+        <img
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Dr. Shiju George.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Dr. Shiju George
+        </h4>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        let images = document.querySelectorAll(".image");
+        for (let i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+
+        for (let i = 0; i < 3; i++) {
+          images[i].style.display = "block";
+        }
+      });
+
+      const buttons = document.querySelectorAll(".buttons button");
+      const images = document.querySelectorAll(".image");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const year = event.target.id;
+
+          const images = document.querySelectorAll(".image");
+          images.forEach((image) => {
+            const imageYear = image.getAttribute("data-year");
+            console.log(imageYear);
+            if (year === "all" || imageYear === year) {
+              image.style.display = "block";
+            } else {
+              image.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
