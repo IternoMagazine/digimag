@@ -57,15 +57,15 @@ h2.stroke {
   align-items: left;
   background-color: transparent;
   backdrop-filter: 20px (blur);
-  padding: 20px;
+  padding:40px 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
   height: fit-content;
   /* position: fixed; */
   top: 20px;
   left: 20px;
-  width: 200px;
-  margin-right: 20px; /* Add margin to separate left and right columns */
+  width: 240px;
+  margin-right: 20px;/* Add margin to separate left and right columns */
 }
 
 .right {
