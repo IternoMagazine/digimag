@@ -1,6 +1,9 @@
 body {
+  background: url("../background.png") fixed;
+}
+main {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("../background.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -103,7 +106,8 @@ h2.stroke {
   border-radius: 10px;
 }
 .glow {
-  text-shadow: 0 0 5px rgb(252, 252, 254);
+  color: rgb(255, 28, 28);
+  text-shadow: 0 0 6px rgb(33, 0, 248);
 }
 @media (max-width: 768px) {
   .left {
