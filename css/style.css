@@ -243,3 +243,13 @@ header .text.sec-text:before {
 .show {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  blockquote p {
+    font-size: 16px !important;
+  }
+
+  .messages .target {
+    height: 500px;
+  }
+}
