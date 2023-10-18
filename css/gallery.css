@@ -63,7 +63,7 @@ nav ul {
 }
 
 @media (max-width: 768px) {
-  header nav {
+  eader nav {
     flex-direction: column;
   }
 
