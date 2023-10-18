@@ -66,3 +66,7 @@ nav ul a {
     border-radius: 5px;
   }
 }
+
+.show {
+  display: flex;
+}
