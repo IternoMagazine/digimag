@@ -18,34 +18,6 @@ body {
   font-family: Alegreya Sans SC;
 }
 
-header {
-  padding: 0 50px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-nav .logo img {
-  width: 100px;
-  object-fit: contain;
-}
-
-nav .logo img.ham {
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  color: white;
-  font-size: 1.1rem;
-  gap: 2.5rem;
-}
-
 .poem1-container {
   display: flex;
   justify-content: center;
@@ -144,6 +116,7 @@ nav ul {
 
 .text2 .title2 {
   font-size: 32px;
+  margin-top: 20px;
 }
 
 .text2 .content2 {
@@ -216,6 +189,7 @@ nav ul {
 }
 
 .text4 {
+  backdrop-filter: blur(10px);
   outline-color: black;
   display: flex;
   justify-content: space-evenly;
