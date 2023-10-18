@@ -41,22 +41,22 @@ nav ul {
   gap: 2.5rem;
 }
 
-header h1,
-header h2 {
+h1,
+h2 {
   font-family: "Zen Dots", sans-serif;
 }
 
-header h1 {
+h1 {
   font-size: 4rem;
   margin-bottom: 90px;
   text-shadow: 20px 20px rgba(130, 130, 130, 0.2), #fc0 1px 0 10px;
 }
 
-header h2 {
+h2 {
   font-size: 4rem;
 }
 
-header h2.stroke {
+h2.stroke {
   -webkit-text-stroke: 1px #fff;
   color: #111;
 }
@@ -73,17 +73,53 @@ header .btn {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 600;
-  padding: 15px 30px;
+  width: 244px;
+  padding: 5px 10px;
   font-size: 1.5rem;
   border-radius: 100px;
   border: 2px solid #af04ff;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 header .btn span {
   color: #af04ff;
   margin-left: 10px;
+}
+
+header .btn .text {
+  position: relative;
+  color: #af04ff;
+  font-size: 30px;
+  font-weight: 600;
+  width: 1000px;
+}
+
+header .btn .text.first-text {
+  color: #fff;
+}
+
+header .text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -191,7 +227,6 @@ header .btn span {
   .team {
     padding: 0 20px;
   }
-
   .team .team-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
