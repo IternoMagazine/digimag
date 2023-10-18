@@ -51,6 +51,14 @@ h1 {
   margin-bottom: 90px;
   text-shadow: 20px 20px rgba(130, 130, 130, 0.2), #fc0 1px 0 10px;
 }
+.home-active{
+  color: #4070f4;
+ 
+}
+nav li:hover{
+  cursor: pointer;
+  text-shadow: 0 0 6px rgb(255, 255, 255);
+}
 
 h2 {
   font-size: 4rem;
