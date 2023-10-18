@@ -257,6 +257,7 @@ body {
 
   .text2 {
     height: 100%;
+    width: 100%;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
