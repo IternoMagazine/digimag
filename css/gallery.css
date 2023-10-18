@@ -101,4 +101,10 @@ nav ul {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  .pain {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4;
+  }
 }

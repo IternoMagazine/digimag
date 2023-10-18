@@ -144,6 +144,7 @@ nav ul {
 
 .text2 .title2 {
   font-size: 32px;
+  margin-top: 20px;
 }
 
 .text2 .content2 {
@@ -216,6 +217,7 @@ nav ul {
 }
 
 .text4 {
+  backdrop-filter: blur(10px);
   outline-color: black;
   display: flex;
   justify-content: space-evenly;
