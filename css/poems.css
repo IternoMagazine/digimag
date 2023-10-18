@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: center;
   width: 22rem;
-  font-size: 20px;
+  font-size: 16px;
   transform: rotate(26.227deg);
 }
 
@@ -236,12 +236,12 @@ body {
   }
 
   .text .title {
-    transform: rotate(20.227deg);
-    margin: 70px 0px 0px 135px;
+    transform: rotate(0deg);
+    margin: 0px 0px 0px 90px;
   }
 
   .text .content {
-    transform: rotate(20.227deg);
+    transform: rotate(0deg);
     margin-top: -160px;
     padding-right: 20px;
     font-size: 14px;
