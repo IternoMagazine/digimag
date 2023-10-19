@@ -9,7 +9,6 @@
 body {
   background: url("../assets/background.png") fixed;
   font-family: Alegreya Sans SC;
-  
 }
 
 main {
@@ -34,10 +33,9 @@ main {
   padding: 0;
 }
 .name {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
-
 
 h2.stroke {
   -webkit-text-stroke: 1px #ff0000;
@@ -60,7 +58,7 @@ h2.stroke {
   align-items: left;
   background-color: transparent;
   backdrop-filter: 20px (blur);
-  padding:40px 40px;
+  padding: 40px 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
   height: fit-content;
@@ -68,7 +66,7 @@ h2.stroke {
   top: 20px;
   left: 20px;
   width: 240px;
-  margin-right: 20px;/* Add margin to separate left and right columns */
+  margin-right: 20px; /* Add margin to separate left and right columns */
 }
 
 .right {
@@ -86,6 +84,7 @@ h2.stroke {
 }
 .right p {
   padding-bottom: 40px;
+  line-height: 2;
 }
 
 .left {
@@ -119,9 +118,10 @@ h2.stroke {
   border-radius: 10px;
 }
 .glow {
-  color: rgb(255, 28, 28);
+  color: #ff1c1c;
   text-shadow: 0 0 6px rgb(33, 0, 248);
 }
+
 @media (max-width: 768px) {
   .left {
     width: auto;
@@ -150,4 +150,13 @@ h2.stroke {
   .name {
     padding-bottom: 60px;
   }
+}
+
+.right hr {
+  border-top: 2px solid #ff1c1c; /* Border style */
+  border-right: 2px solid #333;
+  margin-top: 20px; /* Spacing between articles and the border */
+  width: 100%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
